@@ -1,0 +1,4 @@
+.fullNameInputCont {
+    display: flex;
+    flex-direction: column;
+}
