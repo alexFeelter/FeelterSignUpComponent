@@ -20,6 +20,8 @@ export interface InputProps {
 
 export const FormSignUp = props => {
 
+	// const logo = require("./svgOrgs/googleOrg.svg") as string
+
 	const {
 		register,
 		handleSubmit,
@@ -27,10 +29,70 @@ export const FormSignUp = props => {
 	  } = useForm<IFormValues>();
 	
 	return <form>
+		<div>
+			<h3>Sign up with:</h3>
+			<div className="svgOrgContainer">
+				<div className="svgOrg">
+					<a href="#">
+						<img src="./svgOrgs/googleOrg.svg" alt=""/>
+					</a>
+				</div>
+				<div className="svgOrg">
+					<a href="#">
+						<img src="./svgOrgs/wordpressOrg.svg" alt=""/>
+					</a>
+				</div>
+				<div className="svgOrg">
+					<a href="#">
+						<img src="./svgOrgs/facebookOrg.svg" alt=""/>
+					</a>
+				</div>
+				<div className="svgOrg"><a href="#">
+					<img src="./svgOrgs/linkdinOrg.svg" alt=""/></a></div>
+				<div className="svgOrg">
+					<a href="#">
+						<img src="./svgOrgs/twitterOrg.svg" alt=""/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<p className="orLine">or</p>
 		<FeelterInput id="fullName" htmlFor="fullName" type="text" placeholder="Enter your full name" label="Full Name**" register={ register } />
 		<FeelterInput id="webDomain" htmlFor="webDomain" type="url" placeholder="Enter your web domain" label="Web Domain*" register={ register } />
-		<h2>Product Categories</h2>
-		<div>checkboxes</div>
-		<FeelterInput id="webDomain" htmlFor="webDomain" type="email" placeholder="Enter your email" label="Company email *" register={ register } />
+		<h3>Product Categories</h3>
+		<div className="productCategorCheckboxes">
+			{/* <FeelterInput id="healthBeautyCheck" htmlFor="healthBeautyCheck" type="checkbox" placeholder="Enter your email" label={"Health & Beauty"} register={ register } />	
+			<FeelterInput id="autoCheck" htmlFor="autoCheck" type="checkbox" placeholder="Enter your email" label="Auto" register={ register } />	
+			<FeelterInput id="electronicsCheck" htmlFor="electronicsCheck" type="checkbox" placeholder="Electronics" label="Company email *" register={ register } />	
+			<FeelterInput id="HomeAppliancesCheck" htmlFor="HomeAppliancesCheck" type="checkbox" placeholder="Home Appliances" label="Company email *" register={ register } />	
+			<FeelterInput id="sportsOutdoorCheck" htmlFor="sportsOutdoorCheck" type="checkbox" placeholder="Enter your email" label={"Sports & Outdoors"} register={ register } />	 */}
+			<div className="checkboxCont">
+				<input type="checkbox" id="healthBeautyCheck" name="fruit-1" value={ "Health & Beauty" } />
+				<label htmlFor="healthBeautyCheck">{ "Health & Beauty" }</label>
+			</div>
+			<div className="checkboxCont">
+				<input type="checkbox" id="autoCheck" name="fruit-2" value="Auto" />
+				<label htmlFor="autoCheck">Auto</label>
+			</div>
+			<div className="checkboxCont">
+				<input type="checkbox" id="electronicsCheck" name="fruit-3" value="Electronics" />
+				<label htmlFor="electronicsCheck">Electronics</label>
+			</div>
+			<div className="checkboxCont">
+				<input type="checkbox" id="sportsOutdoorCheck" name="fruit-4" value="Home Appliances" />
+				<label htmlFor="sportsOutdoorCheck">Home Appliances</label>
+			</div>
+			<div className="checkboxCont">
+				<input type="checkbox" id="HomeAppliancesCheck" name="fruit-4" value={ "Sports & Outdoors" } />
+				<label htmlFor="HomeAppliancesCheck">{ "Sports & Outdoors" }</label>
+			</div>
+		</div>
+		<FeelterInput id="emailComp" htmlFor="emailComp" type="email" placeholder="Enter your email" label="Company email *" register={ register } />
+		<FeelterInput id="pass" htmlFor="pass" type="password" placeholder="Create a password" label="Password (6+ characters) *" register={ register } />
+		<input type="submit" value="Create Account" />
+		<div className="haveAccSignIn">
+			<span>Already have an account? </span>
+			<a href="#">Sign In</a>
+		</div>
 	</form>
 }
