@@ -26,3 +26,10 @@ aside main,
 	max-width: 608px;
 	max-height: 340px;
 }
+
+.formContainer {
+	max-width: 450px;
+	width: 100%;
+	margin-left: 340px;
+	margin-right: 100px;
+}

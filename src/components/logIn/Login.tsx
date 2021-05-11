@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useForm, UseFormRegister } from 'react-hook-form';
 
+import { Link } from "react-router-dom";
+
 import { FeelterInput } from "../signUp/formSection/feelterInput/FeelterInput"
 
 import { IFormValues, InputProps } from "../signUp/formSection/formSignUp/FormSignUp"
@@ -58,9 +60,9 @@ export const Login = () => {
 				<span className="errorStyle">Forgot Password?</span>
 			</div>
 			<input type="submit" value="Create Account" />
-			<div className="flexSpaceBetween">
-				<span>Already have an account? </span>
-				<span onClick={ toogleOverflow }>Sign Up</span>
+			<div className="flexCenter haveAccSign">
+				<span className="labelSign">Already have an account?</span>
+				<Link to="/">Sign Up</Link>
 			</div>
 		</div>
 		<div id="overlay"></div>

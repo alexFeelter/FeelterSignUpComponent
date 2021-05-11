@@ -117,11 +117,15 @@ input[type=checkbox]:checked:disabled + label:before {
 	border-color: #bfb;
 }
 
-.haveAccSignIn {
+.labelSign {
+	padding-right: .75rem;
+}
+
+.haveAccSign {
 	padding-top: 1.5rem;
 }
 
-.haveAccSignIn > a {
+.haveAccSign > a {
 	color: rgba(56, 166, 64, 1);
 	text-decoration: none;
 }
