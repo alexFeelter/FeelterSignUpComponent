@@ -1,9 +1,9 @@
 import './App.css';
 
-import { FormSection } from "./components/formSection/FormSection"
+import { FormSection } from "./components/signUp/formSection/FormSection"
 import { AsideSection } from "./components/asideSection/AsideSection"
 
-function App() {
+const App = () => {
 	return <main>
 		<FormSection />
 		<AsideSection />

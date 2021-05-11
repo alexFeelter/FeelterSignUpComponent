@@ -9,7 +9,7 @@ import './reasonCoosenFeelterCarousel.css';
 
 export const ReasonCoosenFeelterCarousel = () => {
 
-	const Arrow = (props, currentSlide, slideCount) => {
+	const Arrow = props => {
 		console.log(props)
 		let className = props.type === "next" ? "nextArrow" : "prevArrow";
 		className += " arrow";

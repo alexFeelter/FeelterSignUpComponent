@@ -1,26 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, UseFormRegister } from 'react-hook-form';
 
 import { FeelterInput } from "../feelterInput/FeelterInput"
+import { Login } from "../../../logIn/Login"
+
 import './styleFormSignUp.css';
 
 export interface IFormValues {
-    email: string,
+	email: string,
 	password: string
 }
 
 export interface InputProps { 
-    htmlFor: string,
-    label: string,
-    id: string,
-    type: string,
-    placeholder: string,
-    register: UseFormRegister<IFormValues>
+	htmlFor: string,
+	label: string,
+	id: string,
+	type: string,
+	placeholder: string,
+	register: UseFormRegister<IFormValues>
 }
 
 export const FormSignUp = props => {
 
-	// const logo = require("./svgOrgs/googleOrg.svg") as string
+	const [isOverlayShown, setOverlow] = useState(false)
+
+	const toogleOverflow = () => {
+		setOverlow(!isOverlayShown)
+	}
 
 	const {
 		register,
@@ -92,7 +98,9 @@ export const FormSignUp = props => {
 		<input type="submit" value="Create Account" />
 		<div className="haveAccSignIn">
 			<span>Already have an account? </span>
-			<a href="#">Sign In</a>
+			{/* <a href="#">Sign In</a> */}
+			<span onClick={ toogleOverflow }>Sign In</span>
 		</div>
+		{ isOverlayShown && <Login /> }
 	</form>
 }
