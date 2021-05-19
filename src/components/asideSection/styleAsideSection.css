@@ -1,4 +1,7 @@
 aside {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 	background-color: #F7F9F4;
 	max-width: 50vw;
 	width: 100%;
@@ -15,21 +18,67 @@ aside main,
 	flex-direction: column;
 	align-items: center;
 }
+
 .carouselContaner {
-	max-width: 400px;
+	max-width: 450px;
 	background: rgba(255, 255, 255, 1);
 	border-radius: 15px;
 	box-shadow: 0px 2px 30px 0px rgb(194 200 205 / 25%);
 }
 
 .feelterAdvantage {
-	max-width: 608px;
-	max-height: 340px;
+	max-width: 580px;
+	width: 100%;
+	height: auto;
 }
 
 .formContainer {
-	max-width: 450px;
+	/* max-width: 450px;
 	width: 100%;
 	margin-left: 340px;
+	margin-right: 100px; */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 450px;
+	margin-left: 340px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-right: 100px;
+	padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+	aside {
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.formContainer {
+		max-width: 90%;
+		margin: 0;
+		margin-top: 7rem;
+	}
+
+	.formContainer > h2 {
+		margin: 0 auto;
+	}
+
+	aside header {
+		position: absolute;
+		top: 2.5rem;
+		left: 50%;
+		right: 50%;
+	}
+
+	aside header a img {
+		max-width: 10rem;
+		height: auto;
+	}
+
+	aside,
+	.carouselContaner {
+		max-width: 90%;
+	}
 }

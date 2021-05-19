@@ -28,3 +28,20 @@
 	display: flex;
 	justify-content: center;
 }
+
+
+@media screen and (max-width: 1000px) {
+	.loginPage {
+		width: 60%;
+		height: 80%;
+		max-height: none;
+	}
+
+	.flexSpaceBetween {
+		flex-direction: column;
+	}
+
+	.flexSpaceBetween .checkboxCont {
+		width: 100%;
+	}
+}

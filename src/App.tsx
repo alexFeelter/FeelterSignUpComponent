@@ -6,24 +6,13 @@ import { FormSignUp } from "./components/signUp/formSection/formSignUp/FormSignU
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route,
-	Link,
-	useHistory,
-	useLocation,
-	useParams
-  } from "react-router-dom";
-
-import { FormSection } from "./components/signUp/formSection/FormSection"
-import { AsideSection } from "./components/asideSection/AsideSection"
+	Route
+} from "react-router-dom";
 
 const App = () => {
 	return <main>
-
 		<Router>
 			<FormSignUp />
-			{/* <FormSection />
-			<AsideSection /> */}
-			
 			<Switch>
 				<Route path="/login">
 					<Login />

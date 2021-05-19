@@ -1,28 +1,33 @@
 .fullNameInputCont {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .svgOrgContainer {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(5, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+	grid-gap: 1rem;
 	margin: 1rem 0;
 }
 
 .svgOrg  {
-	padding: 1rem 1.8rem;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 1.7rem;
 	border: 1px solid #E4E6EF;
-	margin-right: 1rem;
-	display: flex;
-    align-items: center;
 }
 
-.svgOrg:last-child {
+/* .svgOrg:last-child {
 	margin: unset;
-}
+} */
 
 .orLine {
 	display: flex;
+	font-size: 18px;
 }
 
 .orLine::before, 
@@ -51,7 +56,7 @@ input[type=submit] {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: .7rem 1.5rem;
+	padding: 1rem 1.5rem;
 	background-color: rgba(56, 166, 64, 1);
 	border: none;
 	border-radius: 1px;
@@ -118,14 +123,49 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .labelSign {
-	padding-right: .75rem;
+	padding-right: .2rem;
 }
 
 .haveAccSign {
+	display: flex;
+    justify-content: center;
+	font-weight: 700;
 	padding-top: 1.5rem;
 }
 
 .haveAccSign > a {
+	font-size: 16px;
 	color: rgba(56, 166, 64, 1);
 	text-decoration: none;
+	padding-left: .5rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.svgOrgContainer {
+		grid-template-areas: 
+		"googleSign googleSign wordpressSign wordpressSign facebookSign facebookSign"
+		"linkdinSign linkdinSign linkdinSign twitterSign twitterSign twitterSign";
+		grid-template-columns: auto;
+	}
+
+	.gridSign1 {
+		grid-area: googleSign;
+	}
+
+	.gridSign2 {
+		grid-area: wordpressSign;
+	}
+
+	.gridSign3 {
+		grid-area: facebookSign;
+	}
+
+	.gridSign4 {
+		grid-area: linkdinSign;
+	}
+
+	.gridSign5 {
+		grid-area: twitterSign;
+	}
 }

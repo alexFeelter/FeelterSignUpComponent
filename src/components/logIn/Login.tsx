@@ -8,6 +8,7 @@ import { FeelterInput } from "../signUp/formSection/feelterInput/FeelterInput"
 import { IFormValues, InputProps } from "../signUp/formSection/formSignUp/FormSignUp"
 
 import './login.css';
+import "../signUp/formSection/formSignUp/styleFormSignUp.css"
 
 export const Login = () => {
 
@@ -25,26 +26,26 @@ export const Login = () => {
 
 	return <form>
 		<div className="loginPage">
-			<h3 className="flexCenter">Login to Feelter</h3>
+			<h2 className="flexCenter">Login to Feelter</h2>
 			<div className="svgOrgContainer">
-				<div className="svgOrg">
+				<div className="svgOrg gridSign1">
 					<a href="#">
 						<img src="./svgOrgs/googleOrg.svg" alt=""/>
 					</a>
 				</div>
-				<div className="svgOrg">
+				<div className="svgOrg gridSign2">
 					<a href="#">
 						<img src="./svgOrgs/wordpressOrg.svg" alt=""/>
 					</a>
 				</div>
-				<div className="svgOrg">
+				<div className="svgOrg gridSign3">
 					<a href="#">
 						<img src="./svgOrgs/facebookOrg.svg" alt=""/>
 					</a>
 				</div>
-				<div className="svgOrg"><a href="#">
+				<div className="svgOrg gridSign4"><a href="#">
 					<img src="./svgOrgs/linkdinOrg.svg" alt=""/></a></div>
-				<div className="svgOrg">
+				<div className="svgOrg gridSign5">
 					<a href="#">
 						<img src="./svgOrgs/twitterOrg.svg" alt=""/>
 					</a>
