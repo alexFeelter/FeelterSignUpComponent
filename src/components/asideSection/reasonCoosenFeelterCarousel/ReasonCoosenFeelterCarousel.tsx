@@ -106,7 +106,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 				<p>Feelter has helped my ecommerce business to grow</p>
 			</div>
 		</div>
-				<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
+		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
 			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>

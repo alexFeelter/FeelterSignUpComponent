@@ -1,0 +1,40 @@
+.localOrg {
+    display: flex;
+}
+
+.headerClientProps {
+    display: flex;
+    height: min-content;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+.iconContainer > img {
+    padding-right: .5rem;
+}
+
+main {
+    display: flex;
+}
+
+/* button {
+    border: none;
+    background: inherit;
+    font-size: 0.87rem;
+    color: rgba(56, 166, 64, 1);
+    color: rgba(132, 137, 147, 1);
+} */
+
+nav {
+    padding-top: 2.5rem;
+}
+
+.homeSectionHeader > a {
+    padding: 1.4rem 2rem;
+    cursor: pointer;
+    color: rgba(132, 137, 147, 1);
+}

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useForm, UseFormRegister } from 'react-hook-form';
 
 import { BrowserRouter as Router, Link } from "react-router-dom";
@@ -6,7 +5,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { FeelterInput } from "../feelterInput/FeelterInput"
 
 import './styleFormSignUp.css';
-import { AsideSection } from '../../../asideSection/AsideSection';
+import { AsideSection } from '../../../../asideSection/AsideSection';
 
 export interface IFormValues {
 	email: string,
@@ -38,27 +37,27 @@ export const FormSignUp = () => {
 				<div className="svgOrgContainer">
 					<div className="svgOrg gridSign1">
 						<a href="#">
-							<img src="./svgOrgs/googleOrg.svg" alt=""/>
+							<img src="/svgOrgs/googleOrg.svg" alt=""/>
 						</a>
 					</div>
 					<div className="svgOrg gridSign2">
 						<a href="#">
-							<img src="./svgOrgs/wordpressOrg.svg" alt=""/>
+							<img src="/svgOrgs/wordpressOrg.svg" alt=""/>
 						</a>
 					</div>
 					<div className="svgOrg gridSign3">
 						<a href="#">
-							<img src="./svgOrgs/facebookOrg.svg" alt=""/>
+							<img src="/svgOrgs/facebookOrg.svg" alt=""/>
 						</a>
 					</div>
 					<div className="svgOrg gridSign4">
 						<a href="#">
-							<img src="./svgOrgs/linkdinOrg.svg" alt=""/>
+							<img src="/svgOrgs/linkdinOrg.svg" alt=""/>
 						</a>
 					</div>
 					<div className="svgOrg gridSign5">
 						<a href="#">
-							<img src="./svgOrgs/twitterOrg.svg" alt=""/>
+							<img src="/svgOrgs/twitterOrg.svg" alt=""/>
 						</a>
 					</div>
 				</div>

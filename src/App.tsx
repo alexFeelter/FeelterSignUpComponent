@@ -1,7 +1,7 @@
 import './App.css';
 
-import { Login } from "./components/logIn/Login"
-import { FormSignUp } from "./components/signUp/formSection/formSignUp/FormSignUp"
+import { Home } from "./components/home/Home"
+import { Auth } from "./components/auth/Auth"
 
 import {
 	BrowserRouter as Router,
@@ -10,16 +10,12 @@ import {
 } from "react-router-dom";
 
 const App = () => {
-	return <main>
-		<Router>
-			<FormSignUp />
+	return <Router>
 			<Switch>
-				<Route path="/login">
-					<Login />
-				</Route>
+				<Route path="/home" component={ Home } />
+				<Route path="/" component={ Auth } />
 			</Switch>
 		</Router>
-	</main>
 }
 
 export default App;

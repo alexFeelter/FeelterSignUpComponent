@@ -10,9 +10,9 @@ export const AsideSection = () => {
 	return <aside>
 		<div></div>
 		<header>
-			<a href="https://www.feelter.com/" target="_blank"><img src={ feelter } alt="feelter" /></a>
+			<a href="https://www.feelter.com/" target="_blank"><img src={ feelter } alt="Feelter" /></a>
 		</header>
-		<main>
+		<main className="flexSpaceBetween">
 			<h2>Why Choose Feelter?</h2>
 			<div className="carouselContaner">
 				<ReasonCoosenFeelterCarousel />

@@ -30,27 +30,28 @@ export const Login = () => {
 			<div className="svgOrgContainer">
 				<div className="svgOrg gridSign1">
 					<a href="#">
-						<img src="./svgOrgs/googleOrg.svg" alt=""/>
+						<img src="/svgOrgs/googleOrg.svg" alt=""/>
 					</a>
 				</div>
 				<div className="svgOrg gridSign2">
 					<a href="#">
-						<img src="./svgOrgs/wordpressOrg.svg" alt=""/>
+						<img src="/svgOrgs/wordpressOrg.svg" alt=""/>
 					</a>
 				</div>
 				<div className="svgOrg gridSign3">
 					<a href="#">
-						<img src="./svgOrgs/facebookOrg.svg" alt=""/>
+						<img src="/svgOrgs/facebookOrg.svg" alt=""/>
 					</a>
 				</div>
 				<div className="svgOrg gridSign4"><a href="#">
-					<img src="./svgOrgs/linkdinOrg.svg" alt=""/></a></div>
+					<img src="/svgOrgs/linkdinOrg.svg" alt=""/></a></div>
 				<div className="svgOrg gridSign5">
 					<a href="#">
-						<img src="./svgOrgs/twitterOrg.svg" alt=""/>
+						<img src="/svgOrgs/twitterOrg.svg" alt=""/>
 					</a>
 				</div>
 			</div>
+			<p className="orLine">or</p>
 			<FeelterInput id="emailCompLogin" htmlFor="emailCompLogin" type="email" placeholder="Enter your email" label="Email" register={ register } />
 			<FeelterInput id="passLogin" htmlFor="passLogin" type="password" placeholder="Enter your password" label="Password" register={ register } />
 			<div className="flexSpaceBetween">
