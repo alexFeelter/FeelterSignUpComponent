@@ -1,0 +1,35 @@
+{
+	"home":
+		{
+			"homeRecomendationsWelcome": "Hi ",
+			"homeRecomendationsWelcomeDescription": "Here is an overview of your account",
+			"homeRecomendationsCapture": "Your recommended next actions",
+			"homeRecomendations": [
+				{
+					"capture": "Getting Started",
+					"captureDescription": "Watch our introduction video to learn more about Feelter",
+					"durationAction": "minute video",
+					"buttonLabel": "Watch video"
+				},
+				{
+					"capture": "Check you Feelter status installation",
+					"captureDescription": "Installation is in progress, click the button to check the status.",
+					"durationAction": "Installation may take about 1 hour",
+					"buttonLabel": "Check status"
+				},
+				{
+					"capture": "Add a new widget",
+					"captureDescription": "It's time to add you first widget!",
+					"durationAction": "",
+					"buttonLabel": "Add widget"
+				},
+				{
+					"capture": "You have reached your widget limit, upgrade to create more",
+					"captureDescription": "Choose a new subscription plan to be able to create more widgets and get more features",
+					"durationAction": "",
+					"buttonLabel": "Upgrade"
+				}
+			]
+		}
+
+}

@@ -1,40 +1,75 @@
 .localOrg {
-    display: flex;
+	display: flex;
 }
 
 .headerClientProps {
-    display: flex;
-    height: min-content;
+	display: flex;
+	height: min-content;
 }
 
 .iconContainer {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 
 .iconContainer > img {
-    padding-right: .5rem;
+	padding-right: .5rem;
 }
 
 main {
-    display: flex;
+	display: flex;
 }
 
 /* button {
-    border: none;
-    background: inherit;
-    font-size: 0.87rem;
-    color: rgba(56, 166, 64, 1);
-    color: rgba(132, 137, 147, 1);
+	border: none;
+	background: inherit;
+	font-size: 0.87rem;
+	color: rgba(56, 166, 64, 1);
+	color: rgba(132, 137, 147, 1);
 } */
 
 nav {
-    padding-top: 2.5rem;
+	padding-top: 2.5rem;
 }
 
 .homeSectionHeader > a {
-    padding: 1.4rem 2rem;
-    cursor: pointer;
-    color: rgba(132, 137, 147, 1);
+	padding: 1.4rem 2rem;
+	cursor: pointer;
+	color: rgba(132, 137, 147, 1);
+}
+
+.homeHeader {
+	border-bottom: 1px solid #e2e2ea;
+	padding: 1.25rem 1.4rem;
+}
+
+.homeHeader > a > img {
+	max-width: 116px;
+}
+
+.reccomAction {
+	border: 1px solid rgba(228, 230, 239, 1);
+	padding: 1.5rem;
+	margin-top: 1.5rem;
+	border-radius: 4px;
+}
+
+.reccomAction > .reccomActionHeader > h3 {
+	margin: 0;
+}
+
+.reccomActionFooter {
+	padding-top: 1.5rem;
+	border-top: 1px solid #E4E6EF;
+	border-radius: 10px;
+}
+
+.reccomActionFooter > button {
+	cursor: pointer;
+	background-color: rgba(56, 166, 64, 1);
+	color: rgba(255, 255, 255, 1);
+	border: none;
+	padding: 0.4rem 1rem;
+	font-size: 0.87rem;
 }

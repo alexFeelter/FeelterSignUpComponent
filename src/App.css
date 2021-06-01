@@ -45,6 +45,18 @@ h3 {
 	font-size: 16px;
 }
 
+.sideFixedNav {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.sideFixedNav a {
+	color: rgba(50, 59, 75, 1);
+	text-decoration: none;
+}
+
 @media screen and (max-width: 1000px) {
 	main {
 		flex-wrap: wrap;

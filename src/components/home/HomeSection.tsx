@@ -6,7 +6,8 @@
 	RouteComponentProps
 } from "react-router-dom";
 
-import { HomeRecommendations } from "../HomeRecommendations"
+import { HomeRecommendations } from "./HomeRecommendations"
+import { Dashboard } from "./Dashboard"
 
 export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
 	return <main>
@@ -17,6 +18,9 @@ export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
 			</header>
 				<Switch>
 					<Route path={ `${match.url}/recommendations` } component={ HomeRecommendations } />
+				</Switch>
+				<Switch>
+					<Route path={ `${match.url}/dashboard` } component={ Dashboard } />
 				</Switch>
 		</Router>
 	</main>

@@ -8,7 +8,7 @@ import {
 
 import { HeaderFixedNav } from "./HeaderFixedNav"
 import { SideFixedNav } from "./SideFixedNav"
-import { HomeSectionHeader } from "./homeSectionHeader/HomeSection"
+import { HomeSectionHeader } from "./HomeSection"
 
 export const Home = ({ match }: RouteComponentProps<{}>) => {
 	return <div>

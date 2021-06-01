@@ -1,7 +1,11 @@
 import './home.css';
 
+import { BellIcon } from "../../Icons/BellIcon" 
+
+import img from "./icons/facebookOrg.svg"
+
 export const HeaderFixedNav = () => {
-	return <header className="flexSpaceBetween">
+	return <header className="homeHeader flexSpaceBetween">
 		<a href="https://www.feelter.com/" target="_blank">
 			<img src="/images/feelter.png" alt="Feelter" />
 		</a>
@@ -16,7 +20,7 @@ export const HeaderFixedNav = () => {
 					<img src="/images/headerHomeIcons/helpIcon.svg" alt="" />
 				</span>
 				<span>
-					<img src="/images/headerHomeIcons/bellIcon.svg" alt="" />
+					<img src={ img } alt="" />
 				</span>
 				<a href="/">
 					<img src="" alt="" />
