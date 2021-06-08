@@ -3,12 +3,12 @@ import { useForm, UseFormRegister } from 'react-hook-form';
 
 import { Link } from "react-router-dom";
 
-import { FeelterInput } from "../signUp/formSection/feelterInput/FeelterInput"
+import { FeelterInput } from "../signUp/feelterInput/FeelterInput"
 
-import { IFormValues, InputProps } from "../signUp/formSection/formSignUp/FormSignUp"
+import { IFormValues, InputProps } from "../signUp/formSignUp/FormSignUp"
 
 import './login.css';
-import "../signUp/formSection/formSignUp/styleFormSignUp.css"
+import "../signUp/formSignUp/styleFormSignUp.css"
 
 export const Login = () => {
 
@@ -67,6 +67,6 @@ export const Login = () => {
 				<Link to="/">Sign Up</Link>
 			</div>
 		</div>
-		<div id="overlay"></div>
+		<div className="overlay"></div>
 	</form>
 }

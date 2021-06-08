@@ -12,7 +12,6 @@
 	align-items: center;
 }
 
-
 .iconContainer > img {
 	padding-right: .5rem;
 }
@@ -21,16 +20,27 @@ main {
 	display: flex;
 }
 
-/* button {
-	border: none;
-	background: inherit;
-	font-size: 0.87rem;
-	color: rgba(56, 166, 64, 1);
-	color: rgba(132, 137, 147, 1);
-} */
+main > main {
+	flex-direction: column;
+	width: 100%;
+}
+
+main > main > section {
+	width: inherit;
+	background-color: #F9F9F9;
+}
+
+main > main > section > div {
+	width: 50%;
+	padding-left: 3rem;
+}
 
 nav {
 	padding-top: 2.5rem;
+}
+
+.homeSectionHeader {
+	padding: 1.4rem 0 1.4rem 1rem;
 }
 
 .homeSectionHeader > a {
@@ -53,6 +63,7 @@ nav {
 	padding: 1.5rem;
 	margin-top: 1.5rem;
 	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .reccomAction > .reccomActionHeader > h3 {
@@ -72,4 +83,23 @@ nav {
 	border: none;
 	padding: 0.4rem 1rem;
 	font-size: 0.87rem;
+}
+
+.headContent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+section > .addSocial {
+	padding: 0;
+}
+
+.addSocial > .imgCont {
+
+	background-color: #FBFBFB;
+}
+
+.addSocial > .imgCont > img {
+	max-width: 70%;
+	height: auto;
 }

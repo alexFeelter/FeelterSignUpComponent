@@ -1,12 +1,12 @@
-import { HomeRecommendations } from "./HomeRecommendations"
+import { HomeRecommendations } from "./home/Recommendations"
 
 import react from 'react';
 
-import { HomeRecommendationsState } from "./HomeRecommendations"
+import { HomeRecommendationsState } from "./home/Home"
 
 export const RecommendedNextAction = props => <div className="reccomAction">
         <div className="reccomActionHeader flexSpaceBetween">
-            <h3>{ props.recomCapture }</h3>
+            <h4>{ props.recomCapture }</h4>
             <button>X</button>
         </div>
         <p>{ props.recomDescription }</p>

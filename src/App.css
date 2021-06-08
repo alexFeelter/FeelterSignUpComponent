@@ -7,27 +7,43 @@ body > div > main {
 	text-align: center;
 }
 
-/* main {
-	display: flex;
-	justify-content: space-between;
-} */
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
 .App-link {
 	color: #61dafb;
 }
 
-#overlay {
+.loginPage, 
+.addSocial {
+	top: 50%;
+	position: fixed;
+	z-index: 2;
+	left: 50%;
+	/* left: 10%; */
+	transform: translate(-50%, -50%);
+	padding: 4rem;
+	background: rgba(255, 255, 255, 1);
+	/* width: 70%; */
+	width: 50%;
+	height: 70%;
+	overflow-y: auto;
+    max-width: 500px;
+	max-height: 570px;
+}
+
+.flexSpaceBetween {
+	display: flex;
+	justify-content: space-between;
+}
+
+.errorStyle {
+	color: rgba(255, 68, 45, 1);
+}
+
+.flexCenter {
+	display: flex;
+	justify-content: center;
+}
+
+.overlay {
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -42,19 +58,29 @@ h2 {
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 1.25rem; /*20*/
+}
+
+h4 {
+	font-size: 1.125rem; /*18*/
+}
+
+h5 {
+	font-size: 1rem;
 }
 
 .sideFixedNav {
 	display: flex;
 	flex-direction: column;
+	max-width: 15%;
+	width: 100%;
 }
-
-
 
 .sideFixedNav a {
 	color: rgba(50, 59, 75, 1);
 	text-decoration: none;
+	margin: 1rem 0;
+	margin-left: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

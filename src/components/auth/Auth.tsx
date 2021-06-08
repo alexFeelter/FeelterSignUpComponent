@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { Login } from "./logIn/Login"
-import { FormSignUp } from "./signUp/formSection/formSignUp/FormSignUp"
+import { FormSignUp } from "./signUp/formSignUp/FormSignUp"
 
 export const Auth = () => {
 	return <main className="flexSpaceBetween">

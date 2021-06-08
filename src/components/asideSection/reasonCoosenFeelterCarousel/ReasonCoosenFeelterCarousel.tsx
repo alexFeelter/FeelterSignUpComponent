@@ -10,7 +10,6 @@ import './reasonCoosenFeelterCarousel.css';
 export const ReasonCoosenFeelterCarousel = () => {
 
 	const Arrow = props => {
-		console.log(props)
 		let className = props.type === "next" ? "nextArrow" : "prevArrow";
 		className += " arrow";
 		const char = props.type === "next" ? "🡪" : "🡨";

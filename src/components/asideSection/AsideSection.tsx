@@ -19,7 +19,7 @@ export const AsideSection = () => {
 			</div>
 			<div className="feelterAdvantageCont">
 				<h2>The Advantages of Feelter</h2>
-				<img className="feelterAdvantage" src={ feelterAdvantage } alt="feelterAdvantage" />
+				<img src={ feelterAdvantage } alt="feelterAdvantage" className="feelterAdvantage" />
 			</div>
 		</main>
 	</aside>

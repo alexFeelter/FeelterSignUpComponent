@@ -2,9 +2,9 @@ import React from "react";
 
 import { DahboardStatus } from "./DahboardStatus"
 
-export const Dashboard = () => {
+export const Dashboard = (props) => {
 	return <main>
-		<div>
+		<div className="headContent">
 			<DahboardStatus />
 			<DahboardStatus />
 			<DahboardStatus />

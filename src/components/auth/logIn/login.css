@@ -1,35 +1,3 @@
-.loginPage {
-	top: 50%;
-	position: fixed;
-	z-index: 2;
-	left: 50%;
-	/* left: 10%; */
-	transform: translate(-50%, -50%);
-	padding: 4rem;
-	background: rgba(255, 255, 255, 1);
-	/* width: 70%; */
-	width: 50%;
-	height: 70%;
-	overflow-y: auto;
-    max-width: 500px;
-	max-height: 570px;
-}
-
-.flexSpaceBetween {
-	display: flex;
-	justify-content: space-between;
-}
-
-.errorStyle {
-	color: rgba(255, 68, 45, 1);
-}
-
-.flexCenter {
-	display: flex;
-	justify-content: center;
-}
-
-
 @media screen and (max-width: 1000px) {
 	.loginPage {
 		width: 60%;
