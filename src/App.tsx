@@ -12,12 +12,12 @@ import {
 
 const App = () => {
 	return <Router>
-			<Switch>
-				<Route exact path="/" component={ Auth } />
-				<Route path="/product-categories" component={ ProductCategoriesSelection } />
-				<Route path="/main" component={ Main } />
-			</Switch>
-		</Router>
+		<Switch>
+			<Route exact path="/" component={ Auth } />
+			<Route path="/product-categories" component={ ProductCategoriesSelection } />
+			<Route path="/main" component={ Main } />
+		</Switch>
+	</Router>
 }
 
 export default App;

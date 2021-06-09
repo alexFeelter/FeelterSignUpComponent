@@ -3,20 +3,19 @@ import React, { useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route
+	Route,
+	RouteComponentProps
 } from "react-router-dom";
 
 import { Login } from "./logIn/Login"
 import { FormSignUp } from "./signUp/formSignUp/FormSignUp"
 
-export const Auth = () => {
+export const Auth = ({ match }: RouteComponentProps<{}>) => {
 	return <main className="flexSpaceBetween">
 		<Router>
-			<FormSignUp />
+			<FormSignUp match={ match } />
 			<Switch>
-				<Route path="/login">
-					<Login />
-				</Route>
+				<Route path={ `${ match.url }login` } component={ Login } />
 			</Switch>
 		</Router>
 	</main>

@@ -1,25 +1,29 @@
 import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
 	Link,
 	RouteComponentProps
 } from "react-router-dom";
 
+import { Home } from "../../svgIcons/Home"
+import { Content } from "../../svgIcons/Content"
+import { DesignFeelter } from "../../svgIcons/DesignFeelter"
+import { ProductCatalog } from "../../svgIcons/ProductCatalog";
+import { Insights } from "../../svgIcons/Insights";
+
+
 export const SideFixedNav = ({ match }: RouteComponentProps<{}>) => <nav className="sideFixedNav">
-			<Link to={ `/main/home` } className="iconContainer" >
-				<img src="/images/headerNavIcons/homeIcon.svg" alt="Home"/> Home
-			</Link>
-			<Link to={ `/main/feeds` } className="iconContainer" >
-				<img src="/images/headerNavIcons/contentIcon.svg" alt="Content Feeds"/> Content Feeds
-			</Link>
-			<Link to={ `/main/design` } className="iconContainer" >
-				<img src="/images/headerNavIcons/designFeelterIcon.svg" alt="Design & Feelter"/> Design & Feelter
-			</Link>
-			<Link to={ `/main/catalog` } className="iconContainer" >
-				<img src="/images/headerNavIcons/prodCatalog.svg" alt="Product Catalog"/> Product Catalog
-			</Link>
-			<Link to={ `/main/insights` } className="iconContainer" >
-				<img src="/images/headerNavIcons/insightsIcon.svg" alt="Insights"/> Insights
-			</Link>
-	</nav>
+	<Link to={ `${ match.url }/home` } className="iconContainer" >
+		<Home fill="#323B4B" /> Home
+	</Link>
+	<Link to={ `${ match.url }/feeds` } className="iconContainer" >
+		<Content fill="#323B4B" /> Content Feeds
+	</Link>
+	<Link to={ `${ match.url }/design` } className="iconContainer" >
+		<DesignFeelter fill="#323B4B" /> Design & Feelter
+	</Link>
+	<Link to={ `${ match.url }/catalog` } className="iconContainer" >
+		<ProductCatalog fill="#323B4B" /> Product Catalog
+	</Link>
+	<Link to={ `${ match.url }/insights` } className="iconContainer" >
+		<Insights fill="#323B4B" /> Product Catalog
+	</Link>
+</nav>
