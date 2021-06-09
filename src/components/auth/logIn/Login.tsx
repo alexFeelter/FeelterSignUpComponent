@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import { useForm, UseFormRegister } from 'react-hook-form';
+// import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 import { Link } from "react-router-dom";
 
 import { FeelterInput } from "../signUp/feelterInput/FeelterInput"
 
-import { IFormValues, InputProps } from "../signUp/formSignUp/FormSignUp"
+import { IFormValues } from "../signUp/formSignUp/FormSignUp"
 
 import './login.css';
 import "../signUp/formSignUp/styleFormSignUp.css"
 
 export const Login = () => {
 
-	const [isOverlayShown, setOverlow] = useState(false)
+	// const [isOverlayShown, setOverlow] = useState(false)
 
-	const toogleOverflow = () => {
-		setOverlow(!isOverlayShown)
-	}
+	// const toogleOverflow = () => {
+	// 	setOverlow(!isOverlayShown)
+	// }
 
 	const {
 		register,
-		handleSubmit,
-		formState: { errors },
+		// handleSubmit,
+		// formState: { errors },
 	  } = useForm<IFormValues>();
 
 	return <form>

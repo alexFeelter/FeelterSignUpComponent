@@ -26,7 +26,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 	};
 	return <Slider {...settings} >
 		<div className="carouselProd">
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner1</p>
@@ -34,7 +34,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner2</p>
@@ -42,7 +42,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner3</p>
@@ -50,7 +50,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner4</p>
@@ -58,7 +58,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner5</p>
@@ -66,7 +66,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner6</p>
@@ -74,7 +74,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner7</p>
@@ -82,7 +82,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner8</p>
@@ -90,7 +90,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner9</p>
@@ -98,7 +98,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner10</p>
@@ -106,7 +106,7 @@ export const ReasonCoosenFeelterCarousel = () => {
 			</div>
 		</div>
 		<div className="carouselProd" style={{ display: "flex", alignItems: "center" }}>
-			<img className="carouselProdPic" src={ pic } width="72px" height="72px" />
+			<img className="carouselProdPic" src={ pic } alt="carousel pic 1" width="72px" height="72px" />
 			<div className="carouselProdTextCont">
 				<h4>Bogdan Krivenchenko</h4>
 				<p className="carouselProdPosition">eCommerce Owner11</p>

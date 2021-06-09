@@ -10,7 +10,7 @@ export const AsideSection = () => {
 	return <aside>
 		<div></div>
 		<header>
-			<a href="https://www.feelter.com/" target="_blank"><img src={ feelter } alt="Feelter" /></a>
+			<a href="https://www.feelter.com/" target="_blank" rel="noreferrer"><img src={ feelter } alt="Feelter" /></a>
 		</header>
 		<main className="flexSpaceBetween">
 			<h2>Why Choose Feelter?</h2>
