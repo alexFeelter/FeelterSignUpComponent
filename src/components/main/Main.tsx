@@ -12,7 +12,7 @@ import { HomeSectionHeader } from "./home/Home"
 import { AddSocial } from "./home/AddSocial"
 
 export const Main = ({ match }: RouteComponentProps<{}>) => <div>
-	<Router>
+	{/* <Router> */}
 		<HeaderFixedNav />
 		<main>
 			<SideFixedNav match={ match } />
@@ -21,5 +21,5 @@ export const Main = ({ match }: RouteComponentProps<{}>) => <div>
 				<Route path={ `${ match.url }/add-social` } component={ AddSocial } />
 			</Switch>
 		</main>
-	</Router>
+	{/* </Router> */}
 </div>
