@@ -1,9 +1,6 @@
 import { useForm, UseFormRegister } from 'react-hook-form';
 
 import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
 	Link,
 	RouteComponentProps
 } from "react-router-dom";
@@ -29,6 +26,8 @@ export interface InputProps {
 }
 
 export const FormSignUp = ({ match }: RouteComponentProps<{}>) => {
+
+	console.log(match)
 
 	const {
 		register,
@@ -74,7 +73,7 @@ export const FormSignUp = ({ match }: RouteComponentProps<{}>) => {
 			<input type="submit" value="Create Account" />
 			<div className="haveAccSign">
 				<span className="labelSign">Already have an account? </span>
-				<Link to="/login">Sign In</Link>
+				<Link to={ `${ match.url }login` }>Sign In</Link>
 			</div>
 		</form>
 		<AsideSection />

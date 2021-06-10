@@ -1,6 +1,5 @@
 import { useState, useEffect, FC, ReactElement, Dispatch, SetStateAction } from 'react';
 import {
-	BrowserRouter as Router,
 	Switch,
 	Route,
 	Link,
@@ -40,7 +39,6 @@ export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
 	}, [])
 
 	return <main>
-		<Router>
 			<header className="homeSectionHeader">
 				<Link to={ `${match.url}/recommendations` }>Recommendations</Link>
 				<Link to={ `${match.url}/dashboard` }>Dashboard</Link>
@@ -65,6 +63,5 @@ export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
 					/> 
 				}
 				</Switch>
-		</Router>
 	</main>
 }

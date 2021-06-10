@@ -3,13 +3,6 @@ import { useForm, UseFormRegister } from 'react-hook-form';
 import { FeelterInput } from "./feelterInput/FeelterInput"
 
 import feelter from "../../asideSection/images/feelter.png"
-// import { InputProps } from "./formSignUp/FormSignUp"
-
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route
-} from "react-router-dom";
 
 export interface IFormValues {
 	email: string,
