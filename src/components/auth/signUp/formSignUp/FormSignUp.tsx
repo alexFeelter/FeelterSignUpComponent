@@ -22,6 +22,7 @@ export interface InputProps {
 	id: string,
 	type: string,
 	placeholder: string,
+	name: string,
 	register: UseFormRegister<IFormValues>
 }
 
@@ -68,8 +69,8 @@ export const FormSignUp = ({ match }: RouteComponentProps<{}>) => {
 				</div>
 			</div>
 			<p className="orLine">or</p>
-			<FeelterInput id="emailComp" htmlFor="emailComp" type="email" placeholder="Enter your email" label="Company email *" register={ register } />
-			<FeelterInput id="pass" htmlFor="pass" type="password" placeholder="Create a password" label="Password (6+ characters) *" register={ register } />
+			<FeelterInput id="emailComp" name="emailComp" htmlFor="emailComp" type="email" placeholder="Enter your email" label="Company email *" register={ register } />
+			<FeelterInput id="pass" name="password" htmlFor="pass" type="password" placeholder="Create a password" label="Password (6+ characters) *" register={ register } />
 			<input type="submit" value="Create Account" />
 			<div className="haveAccSign">
 				<span className="labelSign">Already have an account? </span>

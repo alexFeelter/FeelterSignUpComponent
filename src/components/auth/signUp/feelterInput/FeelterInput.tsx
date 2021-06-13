@@ -2,10 +2,10 @@ import React from 'react';
 
 import { InputProps, IFormValues } from "../formSignUp/FormSignUp"
 
-export const FeelterInput = ({ htmlFor, label, id, type, placeholder, register }: InputProps) => {
+export const FeelterInput = ({ htmlFor, label, id, type, placeholder, name, register }: InputProps) => {
     return <div className="fullNameInputCont">
         <label htmlFor={ htmlFor }>{ label }</label>
-        <input id={ id } type={ type } placeholder={ placeholder }></input>
+        <input id={ id } type={ type } name={ name } placeholder={ placeholder } ></input>
     </div>
 }
 // export const FeelterInput = ()  => {

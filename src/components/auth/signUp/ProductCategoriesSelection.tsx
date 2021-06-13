@@ -33,8 +33,8 @@ export const ProductCategoriesSelection = props => {
 			<h2>Welcome to Feelter!</h2>
 		</header>
 		<form action="">
-			<FeelterInput id="fullName" htmlFor="fullName" type="text" placeholder="Enter your full name" label="Full Name**" register={ register } />
-			<FeelterInput id="webDomain" htmlFor="webDomain" type="url" placeholder="Enter your web domain" label="Web Domain*" register={ register } /> 
+			<FeelterInput id="fullName" htmlFor="fullName" type="text" name="fullName" placeholder="Enter your full name" label="Full Name**" register={ register } />
+			<FeelterInput id="webDomain" htmlFor="webDomain" type="url" name="webDomain" placeholder="Enter your web domain" label="Web Domain*" register={ register } /> 
 			<h4	>Product Categories</h4>
 			<div className="productCategorCheckboxes">
 				<div className="checkboxCont">
