@@ -11,6 +11,8 @@
 		"@types/react": "^17.0.4",
 		"@types/react-dom": "^17.0.3",
 		"keycloak-js": "^13.0.1",
+		"keycloakify": "^1.0.4",
+		"powerhooks": "^0.1.1",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-hook-form": "^7.3.5",
@@ -24,7 +26,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"build": "react-scripts build && build-keycloak-theme",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
@@ -47,6 +49,7 @@
 		]
 	},
 	"devDependencies": {
-		"@svgr/webpack": "^5.5.0"
+		"@svgr/webpack": "^5.5.0",
+		"keycloak-react-theming": "^42.0.0"
 	}
 }
