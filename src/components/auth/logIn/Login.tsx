@@ -1,4 +1,3 @@
-// import class=useForm RlognFormContainereact, { useState } from 'react';
 import axios from "axios";
 import querystring from "querystring";
 
@@ -19,14 +18,14 @@ export const Login = () => {
 		const data = new FormData(event.target)
 
 		const formData = { 
-			client_id: 'yair-alex',
+			client_id: 'testAlexTest',
 			grant_type: "passwordal",
-			username: 'test@test.com',
-			password: '7390' 
+			username: 'alex@feelter.com',
+			password: '12' 
 		}
 
 		axios.post(
-			'http://localhost:8989/auth/realms/AlexTestRealm/protocol/openid-connect/token', 
+			'http://localhost:9999/auth/realms/AlexTestRealm/protocol/openid-connect/token', 
 			querystring.stringify(formData), {
 				headers: {
 				  "Content-Type": "application/x-www-form-urlencoded"
@@ -34,16 +33,8 @@ export const Login = () => {
 			}).then(response => console.log(response));
 	}
 
-	// const [isOverlayShown, setOverlow] = useState(false)
-
-	// const toogleOverflow = () => {
-	// 	setOverlow(!isOverlayShown)
-	// }
-
 	const {
 		register,
-		// handleSubmit,
-		// formState: { errors },
 	  } = useForm<IFormValues>();
 
 	return <div className="loginFormContainer">

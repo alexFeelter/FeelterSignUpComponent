@@ -1,9 +1,9 @@
 {
-  "realm": "alexTestRealm",
-  "auth-server-url": "http://localhost:8989/auth/",
-  "ssl-required": "external",
-  "resource": "yair-alex",
-  "public-client": true,
-  "enableLogging": true,
-  "confidential-port": 0
+	"realm": "alexTest",
+	"auth-server-url": "http://localhost:9999/auth/",
+	"ssl-required": "external",
+	"resource": "alexClient",
+	"public-client": true,
+	"enableLogging": true,
+	"confidential-port": 0
 }

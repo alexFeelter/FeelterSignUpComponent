@@ -21,16 +21,12 @@
 	border: 1px solid #E4E6EF;
 }
 
-/* .svgOrg:last-child {
-	margin: unset;
-} */
-
 .orLine {
 	display: flex;
 	font-size: 18px;
 }
 
-.orLine::before, 
+.orLine::before,
 .orLine::after {
 	content: '';
 	position: relative;
@@ -38,7 +34,7 @@
 	border-bottom: 1px solid #E4E6EF;
 	margin: auto 0.25em;
 	padding-top: 4px;
-} 
+}
 
 input {
 	padding: 12px;
@@ -86,7 +82,7 @@ input[type=checkbox] + label {
 input[type=checkbox] {
 	display: none;
 }
-  
+
 input[type=checkbox] + label:before {
 	content: "✔";
 	border: 0.1em solid rgba(56, 166, 64, 1);
@@ -109,7 +105,6 @@ input[type=checkbox] + label:active:before {
 input[type=checkbox]:checked + label:before {
 	color: rgba(56, 166, 64, 1);
 	transform: scale(1);
-
 }
   
 input[type=checkbox]:disabled + label:before {
