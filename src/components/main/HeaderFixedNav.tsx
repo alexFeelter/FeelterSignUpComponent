@@ -23,11 +23,10 @@ export const HeaderFixedNav = () => {
 				<span>
 					<Bell fill="#AAAAAA" />
 				</span>
-				<a href="/">
+				<button>
 					<img src="" alt="" />
-				</a>
+				</button>
 			</div>
-
 		</div>
 	</header>
 }

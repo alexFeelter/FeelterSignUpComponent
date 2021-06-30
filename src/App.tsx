@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Main } from "./components/main/Main"
-import { Auth } from "./components/auth/Auth"
+// import { Auth } from "./components/auth/Auth"
 import { ProductCategoriesSelection } from "./components/auth/signUp/ProductCategoriesSelection"
 
 import {
@@ -13,7 +13,7 @@ import {
 const App = () => {
 	return <Router>
 		<Switch>
-			<Route exact path="/" component={ Auth } />
+			{/* <Route exact path="/" component={ Auth } /> */}
 			<Route path="/product-categories" component={ ProductCategoriesSelection } />
 			<Route path="/main" component={ Main } />
 		</Switch>
