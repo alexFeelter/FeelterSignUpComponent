@@ -1,0 +1,38 @@
+{
+	"feelter_installation": {
+		"is_installed": true,
+		"installed_label": "Feelter installed",
+		"not_installed_label": "Feelter not installed"
+	},
+	"website": {
+		"logo": "profile1.jpg",
+		"url": "mywebsitename.com"
+	},
+	"client": {
+		"logo": "profile1.jpg"
+	},
+	"sections": {
+		"home": {
+			"is_visible": true,
+			"label": "home"
+		},
+		"design": {
+			"is_visible": true,
+			"label": "Content Feeds"
+		},
+		"prod_catalog": {
+			"is_visible": true,
+			"label": "Product Catalog"
+		},
+		"insights": {
+			"is_visible": true,
+			"label": "Insights"
+		}	
+	},
+	"account_option_labels": {
+		"account_settings": "Account settings",
+		"store_settings": "Store settings",
+		"logout": "Log out"
+	}
+	
+}

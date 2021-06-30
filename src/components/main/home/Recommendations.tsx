@@ -2,9 +2,9 @@ import { useState, useEffect, FC, ReactElement, Dispatch, SetStateAction } from 
 
 import { RecommendedNextAction } from "../RecommendedNextAction"
 
-import { HomeRecommendationsState } from "./Home"
+import { RecommendationsState } from "./Home"
 
-export const HomeRecommendations = (props) => {
+export const Recommendations = props => {
 	console.log("props ", props)
 	return <section>
 		<div>
