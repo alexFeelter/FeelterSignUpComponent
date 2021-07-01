@@ -1,8 +1,6 @@
 import { useForm, UseFormRegister } from 'react-hook-form';
 
-import { FeelterInput } from "./feelterInput/FeelterInput"
-
-import feelter from "../../asideSection/images/feelter.png"
+// import { FeelterInput } from "./auth/signUp/feelterInput/FeelterInput"
 
 export interface IFormValues {
 	email: string,
@@ -29,12 +27,12 @@ export const ProductCategoriesSelection = props => {
 	  return <section className="prodCategory formContainer">
 		  <div>
 		<header className="flexCenter">
-			<a href="https://www.feelter.com/" target="_blank"><img src={ feelter } alt="Feelter" /></a>
+			<a href="https://www.feelter.com/" target="_blank"><img src="../../public/images/feelter.png" alt="Feelter" /></a>
 			<h2>Welcome to Feelter!</h2>
 		</header>
 		<form action="">
-			<FeelterInput id="fullName" htmlFor="fullName" type="text" name="fullName" placeholder="Enter your full name" label="Full Name**" register={ register } />
-			<FeelterInput id="webDomain" htmlFor="webDomain" type="url" name="webDomain" placeholder="Enter your web domain" label="Web Domain*" register={ register } /> 
+			{/* <FeelterInput id="fullName" htmlFor="fullName" type="text" name="fullName" placeholder="Enter your full name" label="Full Name**" register={ register } /> */}
+			{/* <FeelterInput id="webDomain" htmlFor="webDomain" type="url" name="webDomain" placeholder="Enter your web domain" label="Web Domain*" register={ register } />  */}
 			<h4	>Product Categories</h4>
 			<div className="productCategorCheckboxes">
 				<div className="checkboxCont">

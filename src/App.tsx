@@ -1,19 +1,19 @@
 import './App.css';
 
 import { Main } from "./components/main/Main"
-// import { Auth } from "./components/auth/Auth"
-import { ProductCategoriesSelection } from "./components/auth/signUp/ProductCategoriesSelection"
+import { ProductCategoriesSelection } from "./components/ProductCategoriesSelection"
 
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route
+	Route,
+	Redirect
 } from "react-router-dom";
 
 const App = () => {
 	return <Router>
 		<Switch>
-			{/* <Route exact path="/" component={ Auth } /> */}
+			<Route exact path="/"><Redirect to="/main/home/recommendations"/></Route>
 			<Route path="/product-categories" component={ ProductCategoriesSelection } />
 			<Route path="/main" component={ Main } />
 		</Switch>

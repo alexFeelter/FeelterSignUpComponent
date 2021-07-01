@@ -1,25 +1,36 @@
-import { useState, useEffect, FC, ReactElement, Dispatch, SetStateAction } from 'react';
-
 import { RecommendedNextAction } from "../RecommendedNextAction"
 
-import { RecommendationsState } from "./Home"
+export interface RecommendationsData {
+	welcome: string,
+	welcomeDescription: string,
+	capture: string,
+	data: {
+		capture: string,
+		captureDescription: string,
+		durationAction?: string,
+		buttonLabel: string
+	}[]
+}
 
-export const Recommendations = props => {
-	console.log("props ", props)
+interface RecommendationsProps {
+	data: RecommendationsData
+}
+export const Recommendations = (props: RecommendationsProps) => {
+	const { data } = props
 	return <section>
 		<div>
-		<h2>{ `${ props.home.recomendations.welcome} Line,` }</h2>
-		<p>{ props.home.recomendations.welcomeDescription }</p>
-		<div>
-			<h4>{ props.home.recomendations.capture }</h4>
-			{ props.home.recomendations.welcome && props.home.recomendations.data.map(recom => 
-			<RecommendedNextAction 
-				recomCapture={ recom.capture }
-				recomDescription={ recom.captureDescription }
-				durationAction={ recom.durationAction }
-				buttonLabel={ recom.buttonLabel }
-			/>) }
-		</div>
+			<h2>{ `${ data.welcome} Line,` }</h2>
+			<p>{ data.welcomeDescription }</p>
+			<div>
+				<h4>{ data.capture }</h4>
+				{ data.welcome && data.data.map(recom => 
+				<RecommendedNextAction 
+					recomCapture={ recom.capture }
+					recomDescription={ recom.captureDescription }
+					durationAction={ recom.durationAction }
+					buttonLabel={ recom.buttonLabel }
+				/>) }
+			</div>
 		</div>
 	</section>
 }

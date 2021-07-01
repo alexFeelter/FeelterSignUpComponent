@@ -6,35 +6,35 @@ import {
 	RouteComponentProps
 } from "react-router-dom";
 
-import { Recommendations } from "./Recommendations"
+import { Recommendations, RecommendationsData } from "./Recommendations"
 import { Dashboard } from "./Dashboard"
 
-const fetchURL = "http://localhost:3000/db/homeDB.json"
+const fetchURL = "http://localhost:5000/home"
 
-export interface RecommendationsState {
-	home: {
-		recomendations: {
-			welcome: string,
-			welcomeDescription: string,
-			capture: string,
-			data: {
-				capture: string,
-				captureDescription: string,
-				durationAction?: string,
-				buttonLabel: string
-			}[]
-		}
-	}
+interface HomeState {
+	recommendations: RecommendationsData,
+	// dashboard: RecommendationsData,
 }
 
+type HomeAPI = HomeState
+
 export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
-	const [recoms, setRecommendations] = useState<RecommendationsState>({home: {recomendations: {}}} as RecommendationsState)
+	const [recommendationsData, setRecommendationsData] = useState<HomeState['recommendations']>({} as RecommendationsData)
+	const [dashboardData, setDashboardData] = useState<HomeState>({recommendations: {} as RecommendationsData})
+	// fetch(`${fetchURL}`)
+	// 	.then(res => res.json())
+	// 	.then((data: HomeAPI) => {
+	// 		setRecommendations(data.recommendations)
+	// 	})
+
+		
 	const getData = () =>
 		fetch(`${fetchURL}`)
 			.then(res => res.json())
 	useEffect(() => {
-		getData().then(data => {
-			setRecommendations(data)
+		getData().then((data: HomeAPI) => {
+			console.log(data)
+			setRecommendationsData(data.recommendations)
 		})
 	}, [])
 
@@ -44,22 +44,16 @@ export const HomeSectionHeader = ({ match }): RouteComponentProps<{}> => {
 				<Link to={ `${match.url}/dashboard` }>Dashboard</Link>
 			</header>
 				<Switch>
-				{ recoms.home.recomendations.welcome && 
+				{ recommendationsData.welcome && 
 					<Route 
 						path={ `${match.url}/recommendations` } 
-						render={ match => <Recommendations  url={ match.match.url } { ...recoms } isAuthed={ true } /> } 
+						render={ () => <Recommendations data={ recommendationsData } /> } 
 					/> 
 				}
-				{ recoms.home.recomendations.welcome && 
+				{ recommendationsData.welcome && 
 					<Route 
 						path={ `${match.url}/dashboard` }
-						render={ props => <Dashboard  { ...recoms } isAuthed={ true } /> }  
-					/> 
-				}
-				{ recoms.home.recomendations.welcome && 
-					<Route 
-						path={ `${match.url}/add-social` }
-						render={ props => <Dashboard  { ...recoms } isAuthed={ true } /> }  
+						render={ () => <Dashboard  data={ recommendationsData } /> }  
 					/> 
 				}
 				</Switch>
