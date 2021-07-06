@@ -56,7 +56,7 @@ export const ProductCategoriesSelection = props => {
 					<label htmlFor="HomeAppliancesCheck">{ "Sports & Outdoors" }</label>
 				</div>
 			</div>
-			<input type="submit" value="Let’s go!" />
+			<input type="submit" className="custSubmit" value="Let’s go!" />
 		</form>
 		</div>
 	</section>

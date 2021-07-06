@@ -10,14 +10,12 @@ import {
 	Redirect
 } from "react-router-dom";
 
-const App = () => {
-	return <Router>
+const App = () => <Router>
 		<Switch>
 			<Route exact path="/"><Redirect to="/main/home/recommendations"/></Route>
 			<Route path="/product-categories" component={ ProductCategoriesSelection } />
 			<Route path="/main" component={ Main } />
 		</Switch>
 	</Router>
-}
 
 export default App;

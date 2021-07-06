@@ -7,7 +7,7 @@ export const AddSocial = () => {
 			<form action="">
 				<h2>Add Social Proof to your Website</h2>
 				<p>Create and set your first Social Feed Now</p>
-				<input type="submit" value="Start!"/>
+				<input type="submit" className="custSubmit" value="Start!"/>
 			</form>
 		</div>
 			<div className="overlay"></div>

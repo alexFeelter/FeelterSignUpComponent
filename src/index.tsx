@@ -9,15 +9,6 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 
-// ReactDOM.render(
-// 	<React.StrictMode>
-// 		<App />
-// 	</React.StrictMode>,
-// 	document.getElementById('root')
-// );
-
-
-
 const renderApp = () => ReactDOM.render(<React.StrictMode><App/></React.StrictMode>, document.getElementById("root"));
 
 UserService.initKeycloak(renderApp);

@@ -1,12 +1,3 @@
-.localOrg {
-	display: flex;
-}
-
-.headerClientProps {
-	display: flex;
-	height: min-content;
-}
-
 .iconContainer {
 	display: flex;
 	align-items: center;
@@ -35,18 +26,20 @@ main > main > section > div {
 	padding-left: 3rem;
 }
 
-nav {
+/* nav {
 	padding-top: 2.5rem;
-}
+} */
 
 .homeSectionHeader {
-	padding: 1.4rem 0 1.4rem 1rem;
+	padding: 1.2rem 0 1.4rem 0;
 }
 
-.homeSectionHeader > a {
-	padding: 1.4rem 2rem;
-	cursor: pointer;
-	color: rgba(132, 137, 147, 1);
+.homeSectionHeader > a:first-of-type {
+	border-left: 1px solid #e2e2ea;
+}
+
+.homeSectionHeader > a.active {
+	border-bottom: 2px solid rgba(56, 166, 64, 1);
 }
 
 .homeHeader {
@@ -95,7 +88,6 @@ section > .addSocial {
 }
 
 .addSocial > .imgCont {
-
 	background-color: #FBFBFB;
 }
 

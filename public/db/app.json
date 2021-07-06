@@ -8,7 +8,9 @@
 		"logo": "profile1.jpg",
 		"url": "mywebsitename.com"
 	},
-	"client": {
+	"account": {
+		"full_name": "Alex S",
+		"email": "alex@feelter.com",
 		"logo": "profile1.jpg"
 	},
 	"sections": {
@@ -33,6 +35,22 @@
 		"account_settings": "Account settings",
 		"store_settings": "Store settings",
 		"logout": "Log out"
+	},
+	"account_settings_labels": {
+		"tabs": {
+			"profile": "Profile settings",
+			"plan": "Plan settings",
+			"social": "Social accounts"
+		},
+		"profile_pic": "Profile picture",
+		"todo_label": "Upload your picture",
+		"todo_description": "The picture must be at least 300 pixels wide and high.",
+		"upload_picture": "Change picture",
+		"form": "Personal info",
+		"input_name": "Alex S" ,
+		"input_email": "alex@feelter.com",
+		"input_org": "Organization",
+		"input_options_name": "Industry"
 	}
 	
 }

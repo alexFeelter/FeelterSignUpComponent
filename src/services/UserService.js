@@ -9,27 +9,6 @@ const _kc = new Keycloak('/keycloak.json');
  *
  * @param onAuthenticatedCallback
  */
-// const initKeycloak = (onAuthenticatedCallback) => {
-// 	console.log('esletext')
-//   console.log(_kc.init({
-// 	// onLoad: 'check-sso',
-// 	onLoad: "login-required", 
-// 	promiseType: 'native',
-// 	silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
-// 	pkceMethod: 'S256',
-//   }).catch(e => console.log(e)))
-// 	.then((authenticated) => {
-
-// 		if (authenticated) {
-// 			console.log("test")
-// 			onAuthenticatedCallback();
-// 		} else {
-// 			console.log("esleTest")
-// 			doLogin();
-// 		}
-// 	})
-// 	// .catch(e => {console.error('keycloak', e); onAuthenticatedCallback()})
-// };
 
 const initKeycloak = (onAuthenticatedCallback) => {
 	_kc.init({
@@ -40,16 +19,12 @@ const initKeycloak = (onAuthenticatedCallback) => {
 	  promiseType: 'native',
 
 	})
-	  .then((authenticated) => {
-		// if (authenticated) {
+	.then((authenticated) => {
 		onAuthenticatedCallback();
-		// } else {
-		//   doLogin();
-		// }
-	  })
-  };
+	})
+};
 
-const doLogin = _kc.login;
+export const doLogin = _kc.login;
 
 const doLogout = _kc.logout;
 
@@ -63,6 +38,7 @@ const updateToken = (successCallback) =>
 		.catch(doLogin);
 
 const getUsername = () => _kc.tokenParsed?.preferred_username;
+const getUserId = () => _kc.tokenParsed?.sub;
 
 const hasRole = (roles) => roles.some((role) => _kc.hasRealmRole(role));
 
@@ -75,4 +51,5 @@ export const UserService = {
 	updateToken,
 	getUsername,
 	hasRole,
+	getUserId
 };
