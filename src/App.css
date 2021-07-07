@@ -17,11 +17,9 @@ body > div > main {
 	position: fixed;
 	z-index: 2;
 	left: 50%;
-	/* left: 10%; */
 	transform: translate(-50%, -50%);
 	padding: 4rem;
 	background: rgba(255, 255, 255, 1);
-	/* width: 70%; */
 	width: 50%;
 	height: 70%;
 	overflow-y: auto;
@@ -167,33 +165,43 @@ a.navTabLink {
 }
 
 .accSettings > section > .settingsTabContainer {
-	margin-bottom: -1px;
+	display: flex;
 }
 
 .accSettings > section > .settingsTabContainer > a {
 	border: 1px solid #E4E6EF;
-    /* border-radius: 3px; */
     background: #fff;
 	padding-left: 2.5rem;
     padding-bottom: 1.1rem;
+	border-bottom-width: 0;
 }
 
-.accSettings > section > .settingsTabContainer > a:first-of-type:not(:last-of-type) {
-	border-radius: 4px 0 0 0;
+.accSettings > section > .settingsTabContainer > a:first-of-type {
+	border-top-left-radius: 4px;
 }
 
-.accSettings > section > .settingsTabContainer > a:last-of-type:not(:first-of-type) {
-	border-radius: 0 4px 0 0;
+.accSettings > section > .settingsTabContainer > a:last-of-type {
+	border-top-right-radius: 4px;
 }
 
 .accSettings > section > .settingsTabContainer > a.active {
+	position: relative;
 	border-bottom: none;
+}
+.accSettings > section > .settingsTabContainer > a.active:before {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
 }
 
 .accSettings > section > form {
 	background-color: rgba(255, 255, 255, 1);
 	border: 1px solid #E4E6EF;
-	margin-top: 1.1rem;
+	/* margin-top: 1.1rem; */
 	padding-left: 2.5rem;
 }
 
@@ -255,7 +263,12 @@ a.navTabLink {
 }
 
 .changePicContainer > img {
-	align-self: center;
+    align-self: center;
+    max-width: 120px;
+    width: 100%;
+    max-height: 120px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .changePicContainer > .changePicLabelAction {
@@ -275,10 +288,6 @@ a.navTabLink {
 .changePicContainer > .changePicLabelAction label.custSubmit,
 .accSettings input[type=submit] {
 	width: fit-content;
-}
-
-.changePicContainer > .changePicLabelAction input[type=file] {
-	display: none;
 }
 
 form .updPersInfoInputs {

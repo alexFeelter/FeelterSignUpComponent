@@ -1,9 +1,4 @@
-import {
-	Switch,
-	Route,
-	Link,
-	RouteComponentProps
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { matchActiveUrl } from "../../services/RouterService"
 

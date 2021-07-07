@@ -1,24 +1,32 @@
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 
 import { matchActiveUrl } from "../../services/RouterService"
 
 export const AccSettings = ({ match }) => {
+	const [uploadImage, setUploadImage] = useState(null)
+	
+	const handleChange = event => {
+		setUploadImage(URL.createObjectURL(event.target.files[0])) 
+	}
+
 	return <div className="accSettings">
 		<h2>Account settings</h2>
 		<section>
 			<nav className="settingsTabContainer">
-				<Link className={ "navTabLink " + (matchActiveUrl(`${match.url}/profile`) ? 'active' : '') } to={ `${match.url}/profile` }>Profile settings</Link>
+				<Link className={ "navTabLink " + (matchActiveUrl(`${ match.url }/profile`) ? 'active' : '') } to={ `${match.url}/profile` }>Profile settings</Link>
 			</nav>
 			<form className="accSettingsForm">
 				<div>
 					<h3>Profile picture</h3>
 					<div className="changePicContainer">
-						<img src="/clients_data/defaultProfPic.png" alt="" />
+						<img src={ uploadImage ? uploadImage : '/clients_data/defaultProfPic.png' } alt="" />
 						<div className="changePicLabelAction">
 							<h5>Upload your picture</h5>
 							<p>The picture must be at least 300 pixels wide and high.</p>
-							<label htmlFor="imageUpload" className="custSubmit">Change picture</label>
-							<input type="file" id="imageUpload" accept="image/png, image/jpeg" />
+							<label htmlFor="imageUpload" className="custSubmit">
+								<input type="file" onChange={ handleChange } id="imageUpload" accept="image/*" hidden />
+								Change picture</label>
 						</div>
 					</div>
 				</div>
