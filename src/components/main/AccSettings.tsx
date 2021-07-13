@@ -51,7 +51,7 @@ export const AccSettings = ({ match, data }) => {
 						<label htmlFor="persInfName">Organization</label>
 					</div>
 					<div className="updPersInfoInputs">
-						<Dropdown options={options} value={defaultOption} placeholder="Select an option" />
+						<Dropdown options={ options } value={ defaultOption } placeholder="Select an option" />
 					</div>
 				</div>
 				<input type="submit" className="custSubmit" value="Update" />

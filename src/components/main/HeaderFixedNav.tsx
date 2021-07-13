@@ -7,7 +7,7 @@ import { ListAccSettings } from './ListAccSettings';
 
 import './home.css';
 
-export const HeaderFixedNav = ({ match }, props) => {
+export const HeaderFixedNav = ({ match }) => {
 	const [showListAccSettings, setListAccSettings] = useState(false) 
 	return <header className="homeHeader flexSpaceBetween">
 		<a href="https://www.feelter.com/" target="_blank">

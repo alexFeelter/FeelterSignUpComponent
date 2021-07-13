@@ -87,7 +87,6 @@ export interface MainData {
 type MainAPI = MainData
 
 export const Main = ({ match }: RouteComponentProps<{}>) => {
-
 	const [mainData, setMainData] = useState({})
 
 	const getData = () =>
@@ -95,9 +94,7 @@ export const Main = ({ match }: RouteComponentProps<{}>) => {
 		.then(res => res.json())
 		useEffect(() => {
 			getData().then(data => {
-				console.log("data ", data)
 				setMainData(data)
-				// integrityChecking()
 			})
 		}, [])
 	
@@ -105,14 +102,13 @@ export const Main = ({ match }: RouteComponentProps<{}>) => {
 		<HeaderFixedNav match={ match } />
 		{ mainData && <main>
 			<SideFixedNav props={ mainData } match={ match } />
-				{ console.log("match ", match) }
 			<Switch>
 				<Route path={ `${ match.url }/home` } component={ HomeSectionHeader } />
 				<Route path={ `${ match.url }/add-social` } component={ AddSocial } />
 				{/* <Route path={ `${ match.url }/account-settings` } component={ AccSettings } /> */}
 				<Route 
 					path={ `${ match.url }/account-settings` }
-					render={ () => <AccSettings data={ mainData } match={ match } /> }
+					render={ () => <AccSettings data={ mainData } match={ match } /> }  
 				/>
 			</Switch>
 		</main> }

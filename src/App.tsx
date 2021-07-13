@@ -24,23 +24,21 @@ const fetchURL = "http://localhost:2000/client_data"
 
 const App = () => {
 	const [clientData, setClientData] = useState({} as ClientParts)
-	const [isLoading, setLoading] = useState(true)
+	const [isLoading, setLoading] = useState(false)
 	const [shouldCompleteRegistration, setCompleteRegistration] = useState(false)
 	const getData = () =>
 	fetch(`${fetchURL}`)
 		.then(res => res.json())
 		useEffect(() => {
 			getData().then(data => {
-				console.log(data)
 				setLoading(false)
 
 				if (integrityChecking(data)) {
 					setClientData(data)
 				} else {
-					console.log("asd")
 					setCompleteRegistration(true)
 				}
-				
+
 			})
 		}, [])
 	return isLoading ? 
@@ -49,10 +47,10 @@ const App = () => {
 			<Switch>
 				<Route exact path="/"><Redirect to="/main/home/recommendations" /></Route>
 				<Route path="/product-categories" component={ ProductCategoriesSelection } />
-				<Route path="/main" component={ () =>
+				<Route path="/main" component={ ({ match }) =>
 					shouldCompleteRegistration 
-					? console.log('Redirect') as undefined || <Redirect to="/product-categories" /> 
-					: console.log('Main') as undefined || <Main />
+					? <Redirect to="/product-categories" /> 
+					: <Main match={ match } />
 				} />
 			</Switch>
 		</Router>
