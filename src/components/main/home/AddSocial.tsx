@@ -11,5 +11,5 @@ export const AddSocial = () => {
 			</form>
 		</div>
 			<div className="overlay"></div>
-		</section>
+	</section>
 }

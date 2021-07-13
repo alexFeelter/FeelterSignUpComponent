@@ -1,56 +1,19 @@
 {
-	"feelter_installation": {
-		"is_installed": true,
-		"installed_label": "Feelter installed",
-		"not_installed_label": "Feelter not installed"
-	},
-	"website": {
-		"logo": "profile1.jpg",
-		"url": "mywebsitename.com"
-	},
-	"account": {
-		"full_name": "Alex S",
-		"email": "alex@feelter.com",
-		"logo": "profile1.jpg"
-	},
-	"sections": {
-		"home": {
-			"is_visible": true,
-			"label": "home"
-		},
-		"design": {
-			"is_visible": true,
-			"label": "Content Feeds"
-		},
-		"prod_catalog": {
-			"is_visible": true,
-			"label": "Product Catalog"
-		},
-		"insights": {
-			"is_visible": true,
-			"label": "Insights"
-		}	
-	},
-	"account_option_labels": {
-		"account_settings": "Account settings",
-		"store_settings": "Store settings",
-		"logout": "Log out"
-	},
-	"account_settings_labels": {
-		"tabs": {
-			"profile": "Profile settings",
-			"plan": "Plan settings",
-			"social": "Social accounts"
-		},
-		"profile_pic": "Profile picture",
-		"todo_label": "Upload your picture",
-		"todo_description": "The picture must be at least 300 pixels wide and high.",
-		"upload_picture": "Change picture",
-		"form": "Personal info",
-		"input_name": "Alex S" ,
-		"input_email": "alex@feelter.com",
-		"input_org": "Organization",
-		"input_options_name": "Industry"
-	}
-	
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -1,0 +1,13 @@
+{
+	"client_data": {
+		"logo": "profile1.jpg",
+		"url": "mywebsitename.com",
+		"full_name": "",
+		"email": "alex@feelter.com",
+		"industries": [
+			"value_1",
+			"value_2",
+			"value_3"
+		]
+	}
+}

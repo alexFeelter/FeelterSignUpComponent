@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
 import { matchActiveUrl } from "../../services/RouterService"
 
-export const AccSettings = ({ match }) => {
+export const AccSettings = ({ match, data }) => {
 	const [uploadImage, setUploadImage] = useState(null)
 	
 	const handleChange = event => {
 		setUploadImage(URL.createObjectURL(event.target.files[0])) 
 	}
+
+	const options = data.industries
+	const defaultOption = options[0];
 
 	return <div className="accSettings">
 		<h2>Account settings</h2>
@@ -43,6 +49,9 @@ export const AccSettings = ({ match }) => {
 					<div className="updPersInfoInputs">
 						<input type="text" id="persInfOrg" placeholder="Organization" disabled />
 						<label htmlFor="persInfName">Organization</label>
+					</div>
+					<div className="updPersInfoInputs">
+						<Dropdown options={options} value={defaultOption} placeholder="Select an option" />
 					</div>
 				</div>
 				<input type="submit" className="custSubmit" value="Update" />

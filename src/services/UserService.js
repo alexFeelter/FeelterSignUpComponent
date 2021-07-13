@@ -24,7 +24,7 @@ const initKeycloak = (onAuthenticatedCallback) => {
 	})
 };
 
-export const doLogin = _kc.login;
+const doLogin = _kc.login;
 
 const doLogout = _kc.logout;
 

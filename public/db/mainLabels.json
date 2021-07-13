@@ -1,0 +1,55 @@
+{
+	"main": {
+		"feelter_installation": {
+			"is_installed": true,
+			"installed_label": "Feelter installed",
+			"not_installed_label": "Feelter not installed"
+		},
+		"sections": {
+			"home": {
+				"is_visible": true,
+				"label": "home"
+			},
+			"design": {
+				"is_visible": true,
+				"label": "Content Feeds"
+			},
+			"prod_catalog": {
+				"is_visible": true,
+				"label": "Product Catalog"
+			},
+			"insights": {
+				"is_visible": true,
+				"label": "Insights"
+			}	
+		},
+		"account_option_labels": {
+			"account_settings": "Account settings",
+			"store_settings": "Store settings",
+			"logout": "Log out"
+		},
+		"account_settings_labels": {
+			"tabs": {
+				"profile": "Profile settings",
+				"plan": "Plan settings",
+				"social": "Social accounts"
+			},
+			"profile_pic": "Profile picture",
+			"todo_label": "Upload your picture",
+			"todo_description": "The picture must be at least 300 pixels wide and high.",
+			"upload_picture": "Change picture",
+			"form": "Personal info",
+			"input_org": "Organization",
+			"input_options_name": "Industry",
+			"industries": [
+				{ "value": "value_1", "label": "value_1" },
+				{ "value": "value_2", "label": "value_2" },
+				{ "value": "value_3", "label": "value_3" },
+				{ "value": "value_4", "label": "value_4" },
+				{ "value": "value_5", "label": "value_5" },
+				{ "value": "value_6", "label": "value_6" },
+				{ "value": "value_7", "label": "value_7" }
+			]
+		}
+	}
+}

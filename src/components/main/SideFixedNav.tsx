@@ -11,8 +11,8 @@ import { Insights } from "../../svgIcons/Insights";
 
 import { matchActiveUrl } from "../../services/RouterService"
 
-export const SideFixedNav = ({ match }: RouteComponentProps<{}>) => <nav className="sideFixedNav">
-	<Link to={ `${ match.url }/home` } className={ "iconContainer " + (matchActiveUrl(`${match.url}/home`) ? 'active' : '') } >
+export const SideFixedNav = ({ match }: RouteComponentProps<{}>, props) => <nav className="sideFixedNav">
+	<Link to={ `${ match.url }/home/recommendations` } className={ "iconContainer " + (matchActiveUrl(`${match.url}/home`) ? 'active' : '') } >
 		<Home fill="" /> Home
 	</Link>
 	<Link to={ `${ match.url }/feeds` } className={ "iconContainer " + (matchActiveUrl(`${match.url}/feeds`) ? 'active' : '') } >
