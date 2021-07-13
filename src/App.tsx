@@ -32,13 +32,7 @@ const App = () => {
 		useEffect(() => {
 			getData().then(data => {
 				setLoading(false)
-
-				if (integrityChecking(data)) {
-					setClientData(data)
-				} else {
-					setCompleteRegistration(true)
-				}
-
+				integrityChecking(data) ? setClientData(data) : setCompleteRegistration(true)
 			})
 		}, [])
 	return isLoading ? 
