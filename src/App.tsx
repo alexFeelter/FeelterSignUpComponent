@@ -23,6 +23,8 @@ export interface ClientParts {
 const fetchURL = "http://localhost:2000/client_data"
 
 const App = () => {
+
+	const params = new URLSearchParams(window.location.search)
 	const [clientData, setClientData] = useState({} as ClientParts)
 	const [isLoading, setLoading] = useState(false)
 	const [shouldCompleteRegistration, setCompleteRegistration] = useState(false)
@@ -39,7 +41,8 @@ const App = () => {
 		<p>Loading</p>
 		: <Router>
 			<Switch>
-				<Route exact path="/"><Redirect to="/main/home/recommendations" /></Route>
+				<Route exact path="/"><Redirect to={ `/main/home/recommendations?template=${params.get('template')}` }  
+				/></Route>
 				<Route path="/product-categories" component={ ProductCategoriesSelection } />
 				<Route path="/main" component={ ({ match }) =>
 					shouldCompleteRegistration 
